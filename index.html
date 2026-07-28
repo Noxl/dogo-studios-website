@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dogo Studios — Mobile Apps Crafted with Care</title>
+  <meta name="description" content="Dogo Studios builds thoughtful mobile apps. Discover Tsumego Dojo and more." />
+  <link rel="icon" type="image/png" href="Tsumego%20Dojo%20logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">
+        <img src="Tsumego%20Dojo%20logo.png" alt="Dogo Studios logo" />
+        <span><b>Dogo</b> <em>Studios</em></span>
+      </a>
+      <div class="nav-right">
+        <ul class="nav-links" id="menu">
+          <li><a href="index.html" class="active" data-i18n="common.nav.home">Home</a></li>
+          <li><a href="apps.html" data-i18n="common.nav.apps">Apps</a></li>
+          <li><a href="contact.html" data-i18n="common.nav.contact">Contact</a></li>
+          <li><a href="privacy.html" data-i18n="common.nav.privacy">Privacy</a></li>
+        </ul>
+        <div class="lang-switch" id="langSwitch">
+          <button class="lang-btn" id="langBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Change language">
+            <span id="langFlag">🇬🇧</span><span class="lang-caret">▾</span>
+          </button>
+          <ul class="lang-menu" id="langMenu" role="menu">
+            <li role="menuitem"><button type="button" data-lang="en">🇬🇧 <span>English</span></button></li>
+            <li role="menuitem"><button type="button" data-lang="fr">🇫🇷 <span>Français</span></button></li>
+            <li role="menuitem"><button type="button" data-lang="es">🇪🇸 <span>Español</span></button></li>
+          </ul>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle menu" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <h1><span data-i18n="home.hero.title1">Mobile apps, crafted</span> <span class="accent" data-i18n="home.hero.title2">move by move.</span></h1>
+        <p class="lead" data-i18n="home.hero.lead">Dogo Studios is an indie studio designing focused, beautiful mobile experiences — starting with the game of Go.</p>
+        <div class="btn-row">
+          <a href="apps.html" class="btn btn-primary"><span data-i18n="home.hero.cta_explore">Explore our apps</span> →</a>
+          <a href="contact.html" class="btn btn-ghost" data-i18n="home.hero.cta_contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="Tsumego Dojo logo.png" alt="Dogo Studios logo" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured app -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow" data-i18n="home.featured.eyebrow">Featured app</span>
+        <h2 data-i18n="home.featured.heading">Meet Tsumego Dojo</h2>
+      </div>
+      <div class="app">
+        <div class="app-icon">
+          <img src="app_icon.png" alt="Tsumego Dojo app icon" />
+        </div>
+        <div class="app-body">
+          <span class="app-tag" data-i18n="home.featured.tag">Go / Board game</span>
+          <h3 data-i18n="home.featured.title">Tsumego Dojo</h3>
+          <p data-i18n="home.featured.desc">Sharpen your Go with bite-sized life-and-death puzzles. Train anywhere, track your progress, and climb from beginner to dan.</p>
+          <div class="btn-row">
+            <a href="apps.html" class="btn btn-blue" data-i18n="home.featured.cta">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="footer-brand" href="index.html">
+        <img src="Tsumego%20Dojo%20logo.png" alt="Dogo Studios logo" />
+        Dogo Studios
+      </a>
+      <ul class="footer-links">
+        <li><a href="index.html" data-i18n="common.nav.home">Home</a></li>
+        <li><a href="apps.html" data-i18n="common.nav.apps">Apps</a></li>
+        <li><a href="contact.html" data-i18n="common.nav.contact">Contact</a></li>
+        <li><a href="privacy.html" data-i18n="common.nav.privacy">Privacy</a></li>
+      </ul>
+    </div>
+    <div class="footer-copy" data-i18n="common.footer.copy">© 2026 Dogo Studios. All rights reserved.</div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+</body>
+</html>

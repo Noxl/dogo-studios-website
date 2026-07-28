@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — Dogo Studios</title>
+  <meta name="description" content="Get in touch with Dogo Studios." />
+  <link rel="icon" type="image/png" href="Tsumego%20Dojo%20logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a class="brand" href="index.html">
+        <img src="Tsumego%20Dojo%20logo.png" alt="Dogo Studios logo" />
+        <span><b>Dogo</b> <em>Studios</em></span>
+      </a>
+      <div class="nav-right">
+        <ul class="nav-links" id="menu">
+          <li><a href="index.html" data-i18n="common.nav.home">Home</a></li>
+          <li><a href="apps.html" data-i18n="common.nav.apps">Apps</a></li>
+          <li><a href="contact.html" class="active" data-i18n="common.nav.contact">Contact</a></li>
+          <li><a href="privacy.html" data-i18n="common.nav.privacy">Privacy</a></li>
+        </ul>
+        <div class="lang-switch" id="langSwitch">
+          <button class="lang-btn" id="langBtn" type="button" aria-haspopup="true" aria-expanded="false" aria-label="Change language">
+            <span id="langFlag">🇬🇧</span><span class="lang-caret">▾</span>
+          </button>
+          <ul class="lang-menu" id="langMenu" role="menu">
+            <li role="menuitem"><button type="button" data-lang="en">🇬🇧 <span>English</span></button></li>
+            <li role="menuitem"><button type="button" data-lang="fr">🇫🇷 <span>Français</span></button></li>
+            <li role="menuitem"><button type="button" data-lang="es">🇪🇸 <span>Español</span></button></li>
+          </ul>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle menu" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1 data-i18n="contact.hero.title">Contact Us</h1>
+      <p data-i18n="contact.hero.sub">Questions, feedback, or bug reports — we'd love to hear from you.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Form -->
+        <form class="form-card" onsubmit="event.preventDefault(); this.reset(); alert(dogoI18n.t('contact.form.alert'));">
+          <label for="name" data-i18n="contact.form.name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" data-i18n-placeholder="contact.form.name_ph" required />
+
+          <label for="email" data-i18n="contact.form.email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" data-i18n-placeholder="contact.form.email_ph" required />
+
+          <label for="message" data-i18n="contact.form.message">Message</label>
+          <textarea id="message" name="message" placeholder="How can we help?" data-i18n-placeholder="contact.form.message_ph" required></textarea>
+
+          <button type="submit" class="btn btn-primary" data-i18n="contact.form.submit">Send message</button>
+        </form>
+
+        <!-- Direct info -->
+        <div>
+          <ul class="contact-list">
+            <li>
+              <span class="ci">✉️</span>
+              <div>
+                <strong data-i18n="contact.list.email_label">Email</strong>
+                <span class="placeholder" style="display:inline-block;" data-i18n="contact.list.email_value">[ your@email.com — add later ]</span>
+              </div>
+            </li>
+            <li>
+              <span class="ci">🐦</span>
+              <div>
+                <strong data-i18n="contact.list.social_label">Social</strong>
+                <span class="placeholder" style="display:inline-block;" data-i18n="contact.list.social_value">[ @handle — add later ]</span>
+              </div>
+            </li>
+            <li>
+              <span class="ci">🕒</span>
+              <div>
+                <strong data-i18n="contact.list.response_label">Response time</strong>
+                <span data-i18n="contact.list.response_value">We usually reply within a few business days.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a class="footer-brand" href="index.html">
+        <img src="Tsumego%20Dojo%20logo.png" alt="Dogo Studios logo" />
+        Dogo Studios
+      </a>
+      <ul class="footer-links">
+        <li><a href="index.html" data-i18n="common.nav.home">Home</a></li>
+        <li><a href="apps.html" data-i18n="common.nav.apps">Apps</a></li>
+        <li><a href="contact.html" data-i18n="common.nav.contact">Contact</a></li>
+        <li><a href="privacy.html" data-i18n="common.nav.privacy">Privacy</a></li>
+      </ul>
+    </div>
+    <div class="footer-copy" data-i18n="common.footer.copy">© 2026 Dogo Studios. All rights reserved.</div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+</body>
+</html>
